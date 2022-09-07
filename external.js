@@ -1,4 +1,9 @@
-function rockPaperScissors(userInput, compInput, lose, win, tie){
+let chars = [ "rock", "paper", "scissors" ];
+let lose = 0;
+let win = 0;
+let tie = 0;
+
+function rockPaperScissors(userInput, compInput){
     userInput = userInput.toLowerCase();
     
     if(userInput === compInput){
@@ -25,15 +30,10 @@ function rockPaperScissors(userInput, compInput, lose, win, tie){
 }
 
 
-
-let chars = [ "rock", "paper", "scissors" ];
-let lose = 0;
-let win = 0;
-let tie = 0;
-
 for(let i = 0; i < 5; i++){
 let input = prompt("Rock, paper, or scissors?");
 let comp = chars[Math.floor(Math.random() * chars.length)];
-rockPaperScissors(input, comp, lose, win, tie);
-console.log("You won: " + win + ". You lost: " + lose + ". And you tied: " + tie + ".");
+rockPaperScissors(input, comp);
 }
+console.log("You won: " + win + ". You lost: " + lose + ". And you tied: " + tie + ".");
+
