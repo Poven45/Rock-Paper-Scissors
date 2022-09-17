@@ -6,10 +6,40 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <script src="external.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="external.js" defer></script>
     </head>
     <body>
+        <div class="top">
+            <p1>Welcome to Rock Paper Scissors!</p1>
+            <p2>Pick your weapon below!</p2>
+            <p3>First to 5 wins total is the champion!</p3>
+        </div>
         
+        <div class="buttons">
+            <button id="rock" class="buttonz">
+                <img src="./pictures/rock-icon.png">
+            </button>
+            <button id="paper" class="buttonz">
+                <img src="./pictures/paper-icon.png">
+            </button>
+            <button id="scissors" class="buttonz">
+                <img src="./pictures/scissors-icon.png">
+            </button>
+        </div>
+        <div class="picked">
+            <div id="choices"></div>
+        </div>
+        <div class="stats">
+            <div id="win"></div>
+            <div id="loss"></div>
+            <div id="tie"></div>
+        </div>
+        <div class="bottom1">
+            <div id="results"></div>
+        </div>
+        <div class="bottom2">            
+            <div id="retry"></div>
+        </div>
     </body>
 </html>
