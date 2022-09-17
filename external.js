@@ -43,6 +43,7 @@ reset.textContent = "Restart?";
 reset.style.backgroundColor = 'crimson';
 reset.style.borderRadius = '16px';
 reset.style.border = '3px solid black';
+reset.style.color = 'black';
 reset.addEventListener('click', () => restart())
 
 // the computer picks it's choice
